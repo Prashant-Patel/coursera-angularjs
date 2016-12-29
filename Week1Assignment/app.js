@@ -9,12 +9,12 @@
    $scope.OnLunchCheck = function() {
      if (!$scope.name){
        $scope.message = 'Please enter data first';
-       $scope.mystyle = {"color": "red"};
-       $scope.textcolor= {"border-color": "red"};
+       $scope.textcolor = {"color": "red"};
+       $scope.bordercolor= {"border-color": "red"};
      }
      else{
-       $scope.mystyle = {"color": "green"};
-        $scope.textcolor= {"border-color": "green"};
+        $scope.textcolor = {"color": "green"};
+        $scope.bordercolor= {"border-color": "green"};
        var lunchItem  = calculateLunchItem($scope.name);
        if (lunchItem <= 3)
                 $scope.message ="Enjoy!";
