@@ -46,6 +46,10 @@ function ShoppingListCheckOffService() {
     {
       name: "Chocolate",
       quantity: "5"
+    },
+    {
+      name: "Peanut Butter",
+      quantity: "3"
     }
 ];
 
@@ -69,3 +73,5 @@ service.removeItem = function (itemIndex) {
 
 }
 )();
+
+// !function(){function t(t){var e=this;e.items=t.getBuyItems(),e.removeItem=function(e){t.removeItem(e)}}function e(t){var e=this;e.items=t.getBoughtItems()}function n(){var t=this,e=[],n=[{name:"Milk",quantity:"2"},{name:"Donuts",quantity:"200"},{name:"Cookies",quantity:"300"},{name:"Chocolate",quantity:"5"},{name:"Chocolate",quantity:"5"}];t.getBuyItems=function(){return n},t.getBoughtItems=function(){return e},t.removeItem=function(t){var i=n[t];e.push(i),n.splice(t,1)}}angular.module("ShoppingListCheckOff",[]).controller("ToBuyController",t).controller("AlreadyBoughtController",e).service("ShoppingListCheckOffService",n),t.$inject=["ShoppingListCheckOffService"],e.$inject=["ShoppingListCheckOffService"]}();
