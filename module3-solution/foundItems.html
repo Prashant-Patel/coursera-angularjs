@@ -1,0 +1,8 @@
+<div class="results">
+  <ol>
+    <li ng-repeat="item in menulist.list">
+        {{ item.name }} | {{ item.short_name }} | {{ item.description }}
+        <button class="btn btn-primary" ng-click="menulist.onRemove({index: $index});">Don't want this one!</button>
+    </li>
+  </ol>
+</div>
