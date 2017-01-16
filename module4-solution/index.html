@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="MenuApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Module 4 Assignment</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1 class="row col-sm-6">
+        Welcome to our Restaruant
+      </h1>
+    </div>
+
+  <ui-view></ui-view>
+
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    <script src="src/menuList/js/menulist.module.js"></script>
+    <script src="src/menuList/js/data.module.js"></script>
+
+    <script src="src/menuList/js/routes.js"></script>
+
+    <!-- 'menuList' module artifacts -->
+
+    <script src="src/menuList/js/categories.component.js"></script>
+    <script src="src/menuList/js/categoryListController.js"></script>
+    <script src="src/menuList/js/menudata.service.js"></script>
+    <script src="src/menuList/js/items.component.js"></script>
+    <script src="src/menuList/js/menudetail.controller.js"></script>
+
+
+</body>
+
+</html>
