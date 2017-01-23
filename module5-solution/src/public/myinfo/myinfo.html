@@ -1,0 +1,70 @@
+<h2 class="text-center">My Info</h3>
+  <div class="container">
+    <div class="row"  ng-if="infoctrl.show">
+      <div class="col-md-4 col-md-offset-4">
+        <table class="table table-condensed" style="border-collapse:collapse;">
+           <tr data-toggle="collapse" class="accordion-toggle">
+             <td>
+               First Name :: {{ infoctrl.userinfo.firstname }}
+             </td>
+           </tr>
+           <tr >
+            <td colspan="6" class="hiddenRow"> </td>
+           </tr>
+           <tr data-toggle="collapse" class="accordion-toggle">
+             <td>
+               First Name :: {{ infoctrl.userinfo.lastname }}
+             </td>
+           </tr>
+           <tr >
+            <td colspan="6" class="hiddenRow"> </td>
+           </tr>
+           <tr data-toggle="collapse" class="accordion-toggle">
+             <td>
+               First Name :: {{ infoctrl.userinfo.email }}
+             </td>
+           </tr>
+           <tr >
+            <td colspan="6" class="hiddenRow"> </td>
+           </tr>
+           <tr data-toggle="collapse" class="accordion-toggle">
+             <td>
+               First Name :: {{ infoctrl.userinfo.phone }}
+             </td>
+           </tr>
+           <tr >
+            <td colspan="6" class="hiddenRow"> </td>
+           </tr>
+           <tr data-toggle="collapse" class="accordion-toggle">
+             <td>
+               First Name :: {{ infoctrl.userinfo.name }}
+             </td>
+           </tr>
+           <tr >
+            <td colspan="6" class="hiddenRow"> </td>
+           </tr>
+           <tr data-toggle="collapse" class="accordion-toggle">
+             <td>
+               First Name :: {{ infoctrl.userinfo.description }}
+             </td>
+           </tr>
+           <tr >
+            <td colspan="6" class="hiddenRow"> </td>
+           </tr>
+           <tr data-toggle="collapse" class="accordion-toggle">
+             <td>
+               <img class="img-responsive" width="250" height="150"
+               ng-src="{{infoctrl.basePath}}/images/{{infoctrl.userinfo.favorite}}.jpg"
+               alt="{{ infoctrl.userinfo.name }}">
+             </td>
+           </tr>
+           <tr >
+            <td colspan="6" class="hiddenRow"> </td>
+           </tr>
+          </table>
+      </div>
+    </div>
+    <div class="row text-center" ng-if="!infoctrl.show">
+    <span>Not Signed Up Yet. <a ui-sref="public.registration" class="sign-up-anchor">Sign up Now!</a></span>
+  </div>
+</div>
