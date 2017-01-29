@@ -51,14 +51,15 @@
             <div class="col-md-4 col-md-offset-4">
               <div class="form-group">
                 <label for="favorite">Favorite Dish Short Name:</label>
-                <input ng-model="reg.user.favorite" required type="text" class="form-control" id="favorite" name="favorite" placeholder="ex: L">
+                <input ng-model="reg.user.favorite" required type="text" class="form-control" id="favorite" name="favorite" placeholder="ex: L" ng-blur="reg.callService()">
+                <label>{{reg.Message}}</label>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-4 col-md-offset-4">
               <div class="form-group">
-              <button   ng-disabled="regForm.$invalid" ng-click="reg.submit()" class="btn btn-info">Register</button>
+              <button   ng-disabled="regForm.$invalid || !reg.favoriteFound" ng-click="reg.submit()" class="btn btn-info">Register</button>
             </div>
           </div>
           </div>
